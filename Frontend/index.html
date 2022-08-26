@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./Styling/main.css" />
+    <title>Shopping Lists</title>
+</head>
+
+<body>
+    <div class="root">
+        <article class="auth_page">
+            <h3>Sign up</h3>
+            <div class="auth_container">
+                <form class="login_field" id="signup_field">
+                    <div class="form_container">
+                        <p>Full Name:</p>
+                        <input type="text" placeholder="fullname" id="signup_name-input" />
+                    </div>
+                    <div class="form_container">
+                        <p>Email:</p>
+                        <input type="email" placeholder="email" id="signup_email-input" />
+                    </div>
+                    <div class="form_container">
+                        <p>Password:</p>
+                        <input type="password" placeholder="password" id="signup_password-input" />
+                    </div>
+                    <div class="form_container">
+                        <p>Confirm Password:</p>
+                        <input type="password" placeholder="confirm password" id="signup_conPassword-input" />
+                    </div>
+                    <div class="login_submit">
+                        <button type="submit" class="login_submit-btn" id="signup_submit-btn">
+                Sign Up
+              </button>
+                    </div>
+                </form>
+            </div>
+            <p class="login_entry">
+                Already have an account?
+                <a href="./Pages/login.html">login</a>
+            </p>
+        </article>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>

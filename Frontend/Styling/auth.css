@@ -1,0 +1,80 @@
+.auth_page {
+    width: 100%;
+    height: 100%;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.auth_page h3 {
+    font-size: 2.5em;
+    margin-top: 1rem;
+}
+
+.auth_container {
+    width: 80%;
+    height: auto;
+    padding: 1rem 2rem 1rem 2rem;
+    margin-top: 1rem;
+}
+
+.login_field {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.form_container {
+    margin: 0.7rem;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.form_container p {
+    margin-bottom: 0.5rem;
+    font-size: 1.2em;
+}
+
+.form_container input {
+    height: 40px;
+    width: 100%;
+    background: none;
+    border: solid 1.5px black;
+    border-radius: 5px;
+    outline: none;
+    padding-left: 1rem;
+    font-family: monospace;
+}
+
+.login_submit-btn {
+    height: 35px;
+    width: 150px;
+    background: none;
+    cursor: pointer;
+    border: none;
+    margin-top: 1rem;
+    border: solid 1.5px black;
+    border-radius: 5px;
+    transition: 1s all;
+}
+
+.login_submit-btn:hover {
+    background: black;
+    color: white;
+}
+
+.login_entry {
+    text-align: center;
+}
+
+.nav_back {
+    margin-top: 2rem;
+}
