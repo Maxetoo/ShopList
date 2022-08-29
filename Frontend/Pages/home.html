@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../Styling/main.css" />
+    <script src="https://kit.fontawesome.com/b67cb14b0b.js" crossorigin="anonymous"></script>
+    <title>Shopping Spree</title>
+</head>
+
+<body>
+    <div class="not-available">
+        <h3>This is only available on small screens for now</h3>
+    </div>
+    <div class="root">
+        <section class="home-page">
+            <header class="home_header">
+                <h3>Shoppie</h3>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+            <path
+              d="M224 256c70.7 0 128-57.31 128-128s-57.3-128-128-128C153.3 0 96 57.31 96 128S153.3 256 224 256zM274.7 304H173.3C77.61 304 0 381.6 0 477.3c0 19.14 15.52 34.67 34.66 34.67h378.7C432.5 512 448 496.5 448 477.3C448 381.6 370.4 304 274.7 304z"
+            />
+          </svg>
+            </header>
+            <div class="add_item" id="add-product_icon">
+                <i class="fa-solid fa-plus"></i>
+            </div>
+            <article class="add_product-container">
+                <div class="add_product-header">
+                    <i class="fa-solid fa-xmark" id="add-product_exit"></i>
+                    <p>Add Product</p>
+                </div>
+                <form class="add-product_form">
+                    <div class="add-form_container">
+                        <p>Product Name</p>
+                        <input type="text" placeholder="product name" id="product_name-input" />
+                    </div>
+                    <div class="add-form_container">
+                        <p>Price</p>
+                        <input type="number" placeholder="price" id="product_price-input" />
+                    </div>
+                    <div class="add-form_container">
+                        <p>Image</p>
+                        <input type="file" id="product_image-input" accept="image/*" />
+                        <img src="" alt="" id="add-form_image" />
+                    </div>
+                    <div class="add-form_container">
+                        <p class="add-image_loader">Loading...</p>
+                        <p class="add-product_msg"></p>
+                    </div>
+                    <div class="login_submit">
+                        <button type="submit" class="login_submit-btn" id="product_submit-btn">
+                Submit
+              </button>
+                    </div>
+                </form>
+            </article>
+            <p class="loading-entries">Loading...</p>
+            <p class="network-msg">Connection Down</p>
+            <article class="product_lists"></article>
+        </section>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="../Scripts/home.js"></script>
+</body>
+
+</html>

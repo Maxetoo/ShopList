@@ -10,26 +10,33 @@
 </head>
 
 <body>
+    <div class="not-available">
+        <h3>This is only available on small screens for now</h3>
+    </div>
     <div class="root">
         <article class="auth_page">
             <h3>Sign up</h3>
             <div class="auth_container">
                 <form class="login_field" id="signup_field">
                     <div class="form_container">
-                        <p>Full Name:</p>
+                        <p>Full Name</p>
                         <input type="text" placeholder="fullname" id="signup_name-input" />
                     </div>
                     <div class="form_container">
-                        <p>Email:</p>
+                        <p>Email</p>
                         <input type="email" placeholder="email" id="signup_email-input" />
                     </div>
                     <div class="form_container">
-                        <p>Password:</p>
-                        <input type="password" placeholder="password" id="signup_password-input" />
+                        <p>Password</p>
+                        <input type="password" placeholder="Min 6 characters, with one letter and a number" id="signup_password-input" />
                     </div>
                     <div class="form_container">
-                        <p>Confirm Password:</p>
+                        <p>Confirm Password</p>
                         <input type="password" placeholder="confirm password" id="signup_conPassword-input" />
+                    </div>
+                    <div class="alert-msg_container" id="signup-alert-msg_container">
+                        <p class="loading_msg" id="signup-loading_msg"></p>
+                        <p class="alert-msg" id="signup-alert_msg"></p>
                     </div>
                     <div class="login_submit">
                         <button type="submit" class="login_submit-btn" id="signup_submit-btn">
@@ -40,7 +47,7 @@
             </div>
             <p class="login_entry">
                 Already have an account?
-                <a href="./Pages/login.html">login</a>
+                <a href="./Pages/login.html">Log In</a>
             </p>
         </article>
     </div>
